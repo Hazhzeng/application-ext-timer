@@ -14,5 +14,5 @@ class TimerExtension(AppExtensionBase):
 
     @classmethod
     def after_invocation_global(cls, logger: Logger, context: Context, *args, **kwargs) -> None:
-        elapsed_sec = time() - cls.invocations[context.invocation_id]
+        elapsed_sec = time() - cls.invocations.pop(context.invocation_id)
         logger.warn(f'{context.function_name} Elapsed: {elapsed_sec} seconds')

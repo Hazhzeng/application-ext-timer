@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
-Name: functions-ext-profile
+Name: application-ext-timer
 Version: 1.0.0
-Summary: Azure Functions Extension Profile
-Home-page: https://github.com/Hazhzeng/functions-ext-profile
+Summary: Azure Functions Extension Timer
+Home-page: https://github.com/Hazhzeng/application-ext-timer
 Author: Roger Zeng
 Author-email: hazeng@microsoft.com
 License: MIT

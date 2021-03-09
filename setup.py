@@ -4,13 +4,13 @@ from setuptools import setup
 from setuptools.command import develop
 
 setup(
-    name='functions-ext-profile',
+    name='application-ext-timer',
     version='1.0.0',
-    description='Azure Functions Extension Profile',
+    description='Azure Functions Extension Timer',
     author="Roger Zeng",
     author_email="hazeng@microsoft.com",
     keywords="azure azurefunctions python",
-    url="https://github.com/Hazhzeng/functions-ext-profile",
+    url="https://github.com/Hazhzeng/application-ext-timer",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
@@ -26,10 +26,9 @@ setup(
         'Environment :: Web Environment',
     ],
     license='MIT',
-    packages=['functions_ext_profile'],
+    packages=['application_ext_timer'],
     install_requires=[
-        'azure-functions',
-        'psutil==5.8.0'
+        'azure-functions'
     ],
     extras_require={},
     include_package_data=True

@@ -4,7 +4,7 @@
 
 ```python
 azure-functions
-git+https://github.com/Hazhzeng/functions-ext-profile@master
+git+https://github.com/Hazhzeng/application-ext-timer@master
 ```
 
 2. Set `PYTHON_ENABLE_WORKER_EXTENSIONS="true"` and `PYTHON_ISOLATE_WORKER_DEPENDENCIES="true"` in your environment variable
@@ -15,5 +15,5 @@ git+https://github.com/Hazhzeng/functions-ext-profile@master
 
 Example:
 ```
-HttpTriggerExperiment Stats: [Memory Usage 843776 bytes] [IO Read/Write Count 8/0] [IO Read/Write Bytes 13277/0]
+HttpTriggerExperiment Elapsed: 1.23 seconds
 ```

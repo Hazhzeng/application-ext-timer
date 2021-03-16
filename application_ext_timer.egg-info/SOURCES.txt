@@ -1,7 +1,0 @@
-setup.py
-application_ext_timer/__init__.py
-application_ext_timer.egg-info/PKG-INFO
-application_ext_timer.egg-info/SOURCES.txt
-application_ext_timer.egg-info/dependency_links.txt
-application_ext_timer.egg-info/requires.txt
-application_ext_timer.egg-info/top_level.txt

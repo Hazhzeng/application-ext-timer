@@ -1,1 +1,0 @@
-application_ext_timer

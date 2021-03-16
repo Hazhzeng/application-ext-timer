@@ -9,10 +9,14 @@ class TimerExtension(AppExtensionBase):
     invocations: Dict[str, float] = {}
 
     @classmethod
-    def before_invocation_global(cls, logger: Logger, context: Context, *args, **kwargs) -> None:
+    def post_load_app_level(cls, fname, fdirectory, *args, **kwargs):
+        print('IT IS OKOKOKOK')
+
+    @classmethod
+    def pre_invocation_app_level(cls, logger: Logger, context: Context, func_args: Dict[str, object], *args, **kwargs) -> None:
         cls.invocations[context.invocation_id] = time()
 
     @classmethod
-    def after_invocation_global(cls, logger: Logger, context: Context, *args, **kwargs) -> None:
+    def post_invocation_app_level(cls, logger: Logger, context: Context, func_args: Dict[str, object], func_ret: object, *args, **kwargs) -> None:
         elapsed_sec = time() - cls.invocations.pop(context.invocation_id)
         logger.warn(f'{context.function_name} Elapsed: {elapsed_sec} seconds')
